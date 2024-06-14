@@ -1,0 +1,95 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x16F8741616F87416",
+      "device": "xc7a100tcsg324-1",
+      "gen_directory": "../../../../alu_mux4.gen/sources_1/bd/alu",
+      "name": "alu",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2021.2"
+    },
+    "design_tree": {
+      "alu_mux4_0": ""
+    },
+    "ports": {
+      "a": {
+        "direction": "I"
+      },
+      "b": {
+        "direction": "I"
+      },
+      "s1": {
+        "direction": "I"
+      },
+      "s2": {
+        "direction": "I"
+      },
+      "y": {
+        "direction": "O"
+      }
+    },
+    "components": {
+      "alu_mux4_0": {
+        "vlnv": "xilinx.com:module_ref:alu_mux4:1.0",
+        "xci_name": "alu_alu_mux4_0_0",
+        "xci_path": "ip\\alu_alu_mux4_0_0\\alu_alu_mux4_0_0.xci",
+        "inst_hier_path": "alu_mux4_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "alu_mux4",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "a": {
+            "direction": "I"
+          },
+          "b": {
+            "direction": "I"
+          },
+          "s1": {
+            "direction": "I"
+          },
+          "s2": {
+            "direction": "I"
+          },
+          "y": {
+            "direction": "O"
+          }
+        }
+      }
+    },
+    "nets": {
+      "a_0_1": {
+        "ports": [
+          "a",
+          "alu_mux4_0/a"
+        ]
+      },
+      "alu_mux4_0_y": {
+        "ports": [
+          "alu_mux4_0/y",
+          "y"
+        ]
+      },
+      "b_0_1": {
+        "ports": [
+          "b",
+          "alu_mux4_0/b"
+        ]
+      },
+      "s1_0_1": {
+        "ports": [
+          "s1",
+          "alu_mux4_0/s1"
+        ]
+      },
+      "s2_0_1": {
+        "ports": [
+          "s2",
+          "alu_mux4_0/s2"
+        ]
+      }
+    }
+  }
+}
